@@ -1,0 +1,4 @@
+docker run --rm -it --privileged -e UID=\$(id -u) -e GID=\$(id -g) \\
+  -v /var/run/docker.sock:/var/run/docker.sock \\
+  -v \$(pwd):/home/singularity -v /tmp:/tmp -w /home/singularity \\
+  pottava/singularity:2.6 "\$@"

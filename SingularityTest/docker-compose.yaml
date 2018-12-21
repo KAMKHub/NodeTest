@@ -1,0 +1,10 @@
+# Compose SingularityTest
+# Updated 21.12.2018/JJ
+
+version: '3.1'
+
+services:
+
+  wordpress:
+    image: pottava/singularity:latest
+    container_name: SingularityTest
